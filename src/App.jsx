@@ -11,6 +11,7 @@ import AboutMeContent from "./Components/AboutMeContent";
 import Navbar from "./Components/Navbar";
 import Drawer from "./Components/Drawer";
 import Skills from "./Components/Skills";
+import Footer from "./Components/Footer";
 import SkillsContent from "./Components/SkillsContent";
 import ScrollButton from "./Components/ScrollButton";
 
@@ -98,6 +99,7 @@ export default function App() {
       <Skills skillsRef={skillsRef}>
         <SkillsContent />
       </Skills>
+      <Footer />
       <ScrollButton
         scrollToNextRef={scrollToNextRef}
         currentRefIndex={currentRefIndex}
