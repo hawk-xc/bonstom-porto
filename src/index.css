@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@base {
+  .primary-background: {
+    background-color: #e9ecef;
+  }
+
+  .secondary-background {
+    background-color: #f8f9fa;
+  }
+
+  .light-background {
+    background-color: #ffffff;
+  }
+
+  .slate-background {
+    lime-color: #ffffff;
+  }
+}
