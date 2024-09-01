@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@base {
-  .primary-background: {
+@layer base {
+  .primary-background {
     background-color: #e9ecef;
   }
 
@@ -17,5 +17,15 @@
 
   .slate-background {
     lime-color: #ffffff;
+  }
+
+  .white-image {
+    filter: invert(1) brightness(1);
+  }
+}
+
+@layer components {
+  .lexend {
+    font-family: "Lexend", sans-serif;
   }
 }

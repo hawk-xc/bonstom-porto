@@ -1,8 +1,8 @@
 const HeroSection = ({ heroRef, children }) => {
   return (
-    <div ref={heroRef} className="w-full">
+    <section ref={heroRef} className="w-full">
       {children}
-    </div>
+    </section>
   );
 };
 

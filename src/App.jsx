@@ -2,21 +2,21 @@ import { useRef } from "react";
 
 import HeroSection from "./Components/HeroSection";
 import LandingPage from "./Components/LandingPage";
+import AboutMe from "./Components/AboutMe";
+import AboutMeContent from "./Components/AboutMeContent";
 
 export default function App() {
   const heroRef = useRef(null);
+  const aboutmeRef = useRef(null);
 
   return (
-    // <HeroSection heroRef={heroRef}>
-    //   <LandingPage />
-    // </HeroSection>
-    <section className="h-screen flex items-center justify-center bg-custom-gradient bg-[length:200%_200%] animate-gradient-move">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold text-white">Welcome to My Website</h1>
-        <p className="mt-4 text-lg text-white">
-          Experience the beauty of custom gradient animation!
-        </p>
-      </div>
-    </section>
+    <div className="relative flex flex-col items-center justify-center overflow-hidden align-middle primary-background lexend">
+      <HeroSection heroRef={heroRef}>
+        <LandingPage />
+      </HeroSection>
+      <AboutMe aboutmeRef={aboutmeRef}>
+        <AboutMeContent />
+      </AboutMe>
+    </div>
   );
 }
