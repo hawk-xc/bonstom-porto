@@ -1,6 +1,6 @@
-const HeroSection = ({ heroRef, children }) => {
+const HeroSection = ({ homeRef, children }) => {
   return (
-    <section ref={heroRef} className="w-full">
+    <section ref={homeRef} className="w-full">
       {children}
     </section>
   );

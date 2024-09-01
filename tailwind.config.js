@@ -15,7 +15,7 @@ export default {
         },
       },
       animation: {
-        "gradient-move": "gradient 30s ease infinite",
+        "gradient-move": "gradient 20s ease infinite",
       },
       backgroundImage: {
         "custom-gradient":
