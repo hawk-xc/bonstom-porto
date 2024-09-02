@@ -9,13 +9,12 @@ export default function AboutMeContent() {
         className="flex flex-col flex-1 gap-3 text-black md:pl-24 max-sm:px-10 md:pr-5 max-sm:items-center"
       >
         <h2 className="text-4xl">About Me</h2>
-        <span className="font-light max-sm:text-center">
-          Hi, I'm Bonstom Carvalho, a copywriter with a great passion for
-          crafting words that captivate and inspire. I believe that behind every
-          great product or service, there's a story worth telling - and that's
-          where I come in. With experience in writing for various industries, I
-          understand how to turn ideas into sentences that evoke emotion and
-          drive action. Let's create a memorable story together.
+        <span className="font-light max-sm:text-center max-sm:text-xs">
+          Hi, I'm Bonstom Carvalho, a copywriter passionate about crafting words
+          that captivate and inspire. Every product or service has a story, and
+          I'm here to tell it. With experience across various industries, I turn
+          ideas into words that move people and drive action. Let's create
+          something memorable together.
         </span>
         <button className="z-30 mt-10 text-white transition-all duration-150 ease-in w-28 btn btn-neutral hover:scale-105 active:scale-95 hover:shadow-lg">
           Resume
