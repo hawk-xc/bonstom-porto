@@ -1,6 +1,16 @@
+import bonstom_photo from "./../assets/bonstom_photo.jpg";
+import Image from "./../Particle/Image";
+
 export default function ContactMeContent() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen align-middle max-sm:px-16 md:px-56">
+      <span data-aos="zoom-out-up" className="mb-10">
+        <Image
+          src={bonstom_photo}
+          alt={"bonstom_image_cover"}
+          className={"w-20 rounded-full shadow-md"}
+        />
+      </span>
       <h1 className="text-3xl font-light" data-aos="zoom-in-up">
         Get In Touch
       </h1>
