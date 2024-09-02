@@ -6,7 +6,7 @@ export default function AboutMeContent() {
     <div className="flex items-center justify-center w-full h-screen px-10 align-middle md:gap-10 max-sm:gap-10 md:flex-row max-sm:flex-col-reverse secondary-background">
       <div
         id="aboutmetitle"
-        className="flex flex-col flex-1 gap-3 text-black md:pl-24 max-sm:px-10 md:pr-5 max-sm:items-center"
+        className="flex flex-col gap-3 text-black md:flex-1 md:pl-24 max-sm:px-10 md:pr-5 max-sm:items-center"
       >
         <h2 className="text-4xl">About Me</h2>
         <span className="font-light max-sm:text-center max-sm:text-xs">
@@ -22,7 +22,7 @@ export default function AboutMeContent() {
       </div>
       <div
         id="bonstomImage"
-        className="flex flex-1 md:items-center max-sm:items-end md:justify-start max-sm:justify-center"
+        className="flex md:flex-1 md:items-center max-sm:items-end md:justify-start max-sm:justify-center"
       >
         <Image
           src={bonstomImage}
