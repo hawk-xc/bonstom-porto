@@ -14,11 +14,11 @@ const SideBarLists = [
     name: "skillsRef",
     links: "My Skills",
   },
-  {
-    icon: "ri-bookmark-line",
-    name: "projectRef",
-    links: "My Projects",
-  },
+  // {
+  //   icon: "ri-bookmark-line",
+  //   name: "projectRef",
+  //   links: "My Projects",
+  // },
   {
     icon: "ri-phone-line",
     name: "contactmeRef",

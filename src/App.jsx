@@ -30,7 +30,7 @@ export default function App() {
   const refLists = {
     homeRef,
     aboutmeRef,
-    projectRef,
+    // projectRef,
     skillsRef,
     contactmeRef,
   };

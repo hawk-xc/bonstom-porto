@@ -8,19 +8,28 @@ export default function AboutMeContent() {
         id="aboutmetitle"
         className="flex flex-col gap-3 text-black md:flex-1 md:pl-24 max-sm:px-10 md:pr-5 max-sm:items-center"
       >
-        <h2 className="text-4xl">About Me</h2>
-        <span className="font-light max-sm:text-center max-sm:text-xs">
+        <h2 className="text-4xl" data-aos="zoom-in-up">
+          About Me
+        </h2>
+        <span
+          className="font-light max-sm:text-center max-sm:text-xs"
+          data-aos="zoom-in-up"
+        >
           Hi, I'm Bonstom Carvalho, a copywriter passionate about crafting words
           that captivate and inspire. Every product or service has a story, and
           I'm here to tell it. With experience across various industries, I turn
           ideas into words that move people and drive action. Let's create
           something memorable together.
         </span>
-        <button className="z-30 mt-10 text-white transition-all duration-150 ease-in w-28 btn btn-neutral hover:scale-105 active:scale-95 hover:shadow-lg">
+        <button
+          data-aos="zoom-in-up"
+          className="z-30 mt-10 text-white transition-all duration-150 ease-in w-28 btn btn-neutral hover:scale-105 active:scale-95 hover:shadow-lg"
+        >
           Resume
         </button>
       </div>
       <div
+        data-aos="zoom-in-up"
         id="bonstomImage"
         className="flex md:flex-1 md:items-center max-sm:items-end md:justify-start max-sm:justify-center"
       >

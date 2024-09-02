@@ -9,7 +9,7 @@ const ScrollButton = ({ scrollToNextRef, currentRefIndex }) => {
       }`}
       onClick={scrollToNextRef}
     >
-      {currentRefIndex < 5 ? (
+      {currentRefIndex < 3 ? (
         <i className="text-3xl ri-skip-down-fill"></i>
       ) : (
         <i className="text-3xl ri-arrow-up-double-line"></i>

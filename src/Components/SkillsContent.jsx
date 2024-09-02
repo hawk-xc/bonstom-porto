@@ -19,12 +19,17 @@ export default function SkillsContent() {
   return (
     <div className="flex flex-col items-center justify-center h-screen gap-8 align-middle light-background">
       <div className="justify-start w-8/12">
-        <h2 className="text-4xl">My Skills</h2>
-        <span>These are my technical and soft skills</span>
+        <h2 className="text-4xl" data-aos="zoom-in-up">
+          My Skills
+        </h2>
+        <span data-aos="zoom-in-up">
+          These are my technical and soft skills
+        </span>
       </div>
       <div
         role="tablist"
         className="w-8/12 transition-all duration-150 tabs tabs-lifted"
+        data-aos="zoom-in-up"
       >
         <input
           type="radio"
@@ -48,6 +53,7 @@ export default function SkillsContent() {
               <li
                 key={skill.name}
                 className="flex flex-col max-sm:gap-1 md:w-5/12 max-sm:w-full"
+                data-aos="zoom-out-up"
               >
                 <span className="md:text-xl max-sm:text-md">{skill.name}</span>
                 <DynamicProgressBar key={skill.name} value={skill.value} />
