@@ -11,9 +11,12 @@ import AboutMeContent from "./Components/AboutMeContent";
 import Navbar from "./Components/Navbar";
 import Drawer from "./Components/Drawer";
 import Skills from "./Components/Skills";
+import ContactMe from "./Components/ContactMe";
+import ContactMeContent from "./Components/ContactMeContent";
 import Footer from "./Components/Footer";
 import SkillsContent from "./Components/SkillsContent";
 import ScrollButton from "./Components/ScrollButton";
+import SideBarLists from "./Particle/SidebarLists";
 
 export default function App() {
   const homeRef = useRef(null);
@@ -87,8 +90,18 @@ export default function App() {
       className="relative flex flex-col items-center justify-center overflow-hidden align-middle primary-background lexend"
       data-theme="light"
     >
-      <Drawer />
-      <Navbar />
+      <Drawer
+        SideBarLists={SideBarLists}
+        refLists={refLists}
+        reference={reference}
+        currentRefIndex={currentRefIndex}
+      />
+      <Navbar
+        SideBarLists={SideBarLists}
+        refLists={refLists}
+        reference={reference}
+        currentRefIndex={currentRefIndex}
+      />
       <ParticlesComponent />
       <HeroSection homeRef={homeRef}>
         <LandingPage />
@@ -99,6 +112,9 @@ export default function App() {
       <Skills skillsRef={skillsRef}>
         <SkillsContent />
       </Skills>
+      <ContactMe contactmeRef={contactmeRef}>
+        <ContactMeContent />
+      </ContactMe>
       <Footer />
       <ScrollButton
         scrollToNextRef={scrollToNextRef}

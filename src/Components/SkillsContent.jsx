@@ -40,13 +40,16 @@ export default function SkillsContent() {
           className="flex w-full p-6 shadow-md tab-content bg-base-100 border-base-300 rounded-box"
         >
           <ul
-            className={`flex flex-row flex-wrap gap-7 justify-evenly ${
+            className={`flex md:flex-row max-sm:flex-col flex-wrap md:gap-7 max-sm:gap-3 justify-evenly ${
               tab1 ? "" : "hidden"
             }`}
           >
             {SkillsLists.technical.map((skill) => (
-              <li className="flex flex-col w-5/12 gap-3">
-                <span className="text-xl">{skill.name}</span>
+              <li
+                key={skill.name}
+                className="flex flex-col max-sm:gap-1 md:w-5/12 max-sm:w-full"
+              >
+                <span className="md:text-xl max-sm:text-md">{skill.name}</span>
                 <DynamicProgressBar key={skill.name} value={skill.value} />
               </li>
             ))}
@@ -66,13 +69,13 @@ export default function SkillsContent() {
           className="p-6 tab-content bg-base-100 border-base-300 rounded-box"
         >
           <ul
-            className={`flex flex-row flex-wrap gap-7 justify-evenly ${
+            className={`flex flex-row flex-wrap md:gap-7 max-sm:gap-1 justify-evenly ${
               tab2 ? "" : "hidden"
             }`}
           >
             {SkillsLists.soft.map((skill) => (
-              <li className="w-5/12">
-                <span className="text-xl">{skill.name}</span>
+              <li key={skill.name} className="md:w-5/12 max-sm:w-full">
+                <span className="md:text-xl max-sm:text-md">{skill.name}</span>
                 <DynamicProgressBar key={skill.name} value={skill.value} />
               </li>
             ))}

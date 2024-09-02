@@ -1,27 +1,27 @@
 const SkillsLists = {
   technical: [
     {
-      name: "skill 1",
+      name: "Financial Management",
       value: 70,
     },
     {
-      name: "skill 2",
+      name: "Analytical Skills",
       value: 80,
     },
     {
-      name: "skill 3",
+      name: "Communication Skills",
       value: 90,
     },
     {
-      name: "skill 4",
+      name: "Project Management",
       value: 70,
     },
     {
-      name: "skill 5",
+      name: "Leadership and Team Management",
       value: 80,
     },
     {
-      name: "skill 6",
+      name: "Marketing and Sales",
       value: 90,
     },
   ],

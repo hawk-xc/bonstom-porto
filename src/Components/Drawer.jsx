@@ -1,6 +1,6 @@
-const Drawer = () => {
+const Drawer = ({ SideBarLists, refLists, reference, currentRefIndex }) => {
   return (
-    <div className="z-50 drawer">
+    <div className="z-40 drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <label
@@ -10,20 +10,27 @@ const Drawer = () => {
           <i className="ri-menu-4-line text-slate-800"></i>
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="z-50 drawer-side">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="w-7/12 min-h-full p-4 menu secondary-background text-base-content">
+        <ul className="flex flex-col w-7/12 min-h-full gap-3 p-4 menu secondary-background text-base-content">
           {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          {SideBarLists?.map((ref, index) => (
+            <li
+              key={ref?.name}
+              className={`p-3 text-lg rounded-md cursor-pointer ${
+                currentRefIndex === index
+                  ? "bg-gradient-to-r from-sky-200 to-white"
+                  : ""
+              }`}
+              onClick={() => reference(refLists[ref?.name])}
+            >
+              {ref?.links}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
